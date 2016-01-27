@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5726F4E91BBF2A92006C92AB /* MCSketchPluginFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4E81BBF2A92006C92AB /* MCSketchPluginFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5726F4F51BBF2C4D006C92AB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5726F4F41BBF2C4D006C92AB /* JavaScriptCore.framework */; };
+		5726F5011BBF31D0006C92AB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5726F5001BBF31D0006C92AB /* Utilities.m */; };
+		57426E8A1BCAB2140014A79A /* MCSPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57426E881BCAB2140014A79A /* MCSPluginController.m */; };
+		57702C2F1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57702C2E1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib */; };
+		577F20D91BE782E300C62100 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4FF1BBF31C2006C92AB /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577F20DA1BE782E300C62100 /* MochaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4F81BBF2D1F006C92AB /* MochaRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577F20DB1BE782E300C62100 /* SketchRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4F01BBF2ABC006C92AB /* SketchRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577F20DC1BE782E300C62100 /* MCSPluginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57426E871BCAB2140014A79A /* MCSPluginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57C7C88C1BEDB29B007F8D33 /* RSSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */; };
+		57C7C88D1BEDB29C007F8D33 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */; };
+		57D0E9B51C03A735001E731E /* MCSPluginUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0E9B31C03A735001E731E /* MCSPluginUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57D0E9B61C03A735001E731E /* MCSPluginUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E9B41C03A735001E731E /* MCSPluginUserDefaults.m */; };
+		57D0E9BA1C03A78F001E731E /* MCSPluginUserDefaultsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0E9B81C03A78F001E731E /* MCSPluginUserDefaultsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57D0E9BB1C03A78F001E731E /* MCSPluginUserDefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E9B91C03A78F001E731E /* MCSPluginUserDefaultsController.m */; };
+		57D0E9C11C03AC84001E731E /* MCSPluginUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0E9BF1C03AC84001E731E /* MCSPluginUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57D0E9C21C03AC84001E731E /* MCSPluginUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E9C01C03AC84001E731E /* MCSPluginUpdater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5726F4E51BBF2A92006C92AB /* MCSketchPluginFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCSketchPluginFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5726F4E81BBF2A92006C92AB /* MCSketchPluginFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MCSketchPluginFramework.h; path = MCSketchPluginFramework/MCSketchPluginFramework.h; sourceTree = "<group>"; };
+		5726F4EA1BBF2A92006C92AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5726F4F01BBF2ABC006C92AB /* SketchRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchRuntime.h; sourceTree = "<group>"; };
+		5726F4F41BBF2C4D006C92AB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5726F4F81BBF2D1F006C92AB /* MochaRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MochaRuntime.h; sourceTree = "<group>"; };
+		5726F4FF1BBF31C2006C92AB /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		5726F5001BBF31D0006C92AB /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		57426E871BCAB2140014A79A /* MCSPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginController.h; sourceTree = "<group>"; };
+		57426E881BCAB2140014A79A /* MCSPluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginController.m; sourceTree = "<group>"; };
+		57702C2E1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCSPluginUpdatePromptWindow.xib; sourceTree = "<group>"; };
+		57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
+		57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
+		57D0E9B31C03A735001E731E /* MCSPluginUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginUserDefaults.h; sourceTree = "<group>"; };
+		57D0E9B41C03A735001E731E /* MCSPluginUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginUserDefaults.m; sourceTree = "<group>"; };
+		57D0E9B81C03A78F001E731E /* MCSPluginUserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginUserDefaultsController.h; sourceTree = "<group>"; };
+		57D0E9B91C03A78F001E731E /* MCSPluginUserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginUserDefaultsController.m; sourceTree = "<group>"; };
+		57D0E9BF1C03AC84001E731E /* MCSPluginUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginUpdater.h; sourceTree = "<group>"; };
+		57D0E9C01C03AC84001E731E /* MCSPluginUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginUpdater.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5726F4E11BBF2A92006C92AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5726F4F51BBF2C4D006C92AB /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5726F4DB1BBF2A92006C92AB = {
+			isa = PBXGroup;
+			children = (
+				5726F4E81BBF2A92006C92AB /* MCSketchPluginFramework.h */,
+				57702C361C0616DD00AB3835 /* Resources */,
+				5726F4E71BBF2A92006C92AB /* MCSketchPluginFramework */,
+				57C7C8891BEDB283007F8D33 /* RSSwizzle */,
+				57D0E9BD1C03AC2F001E731E /* Frameworks */,
+				5726F4E61BBF2A92006C92AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5726F4E61BBF2A92006C92AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5726F4E51BBF2A92006C92AB /* MCSketchPluginFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5726F4E71BBF2A92006C92AB /* MCSketchPluginFramework */ = {
+			isa = PBXGroup;
+			children = (
+				57D0E9B11C03A70D001E731E /* Plugin Controller */,
+				57D0E9AE1C03A6CA001E731E /* Utilitiy Functions */,
+				57D0E9B01C03A6F3001E731E /* Sketch Runtime */,
+				57D0E9AF1C03A6DF001E731E /* Mocha Runtime */,
+				5726F4EA1BBF2A92006C92AB /* Info.plist */,
+			);
+			path = MCSketchPluginFramework;
+			sourceTree = "<group>";
+		};
+		57702C361C0616DD00AB3835 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		57C7C8891BEDB283007F8D33 /* RSSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */,
+				57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */,
+			);
+			name = RSSwizzle;
+			sourceTree = "<group>";
+		};
+		57D0E9AE1C03A6CA001E731E /* Utilitiy Functions */ = {
+			isa = PBXGroup;
+			children = (
+				5726F4FF1BBF31C2006C92AB /* Utilities.h */,
+				5726F5001BBF31D0006C92AB /* Utilities.m */,
+			);
+			name = "Utilitiy Functions";
+			sourceTree = "<group>";
+		};
+		57D0E9AF1C03A6DF001E731E /* Mocha Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				5726F4F81BBF2D1F006C92AB /* MochaRuntime.h */,
+			);
+			name = "Mocha Runtime";
+			sourceTree = "<group>";
+		};
+		57D0E9B01C03A6F3001E731E /* Sketch Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				5726F4F01BBF2ABC006C92AB /* SketchRuntime.h */,
+			);
+			name = "Sketch Runtime";
+			sourceTree = "<group>";
+		};
+		57D0E9B11C03A70D001E731E /* Plugin Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57D0E9BE1C03AC44001E731E /* Updater */,
+				57D0E9B21C03A71B001E731E /* User Defaults Proxy */,
+				57426E871BCAB2140014A79A /* MCSPluginController.h */,
+				57426E881BCAB2140014A79A /* MCSPluginController.m */,
+			);
+			name = "Plugin Controller";
+			sourceTree = "<group>";
+		};
+		57D0E9B21C03A71B001E731E /* User Defaults Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				57D0E9B71C03A765001E731E /* Controller */,
+				57D0E9B31C03A735001E731E /* MCSPluginUserDefaults.h */,
+				57D0E9B41C03A735001E731E /* MCSPluginUserDefaults.m */,
+			);
+			name = "User Defaults Proxy";
+			sourceTree = "<group>";
+		};
+		57D0E9B71C03A765001E731E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57D0E9B81C03A78F001E731E /* MCSPluginUserDefaultsController.h */,
+				57D0E9B91C03A78F001E731E /* MCSPluginUserDefaultsController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		57D0E9BD1C03AC2F001E731E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5726F4F41BBF2C4D006C92AB /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57D0E9BE1C03AC44001E731E /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				57D0E9BF1C03AC84001E731E /* MCSPluginUpdater.h */,
+				57D0E9C01C03AC84001E731E /* MCSPluginUpdater.m */,
+				57702C2E1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib */,
+			);
+			name = Updater;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5726F4E21BBF2A92006C92AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5726F4E91BBF2A92006C92AB /* MCSketchPluginFramework.h in Headers */,
+				577F20D91BE782E300C62100 /* Utilities.h in Headers */,
+				57C7C88C1BEDB29B007F8D33 /* RSSwizzle.h in Headers */,
+				57D0E9B51C03A735001E731E /* MCSPluginUserDefaults.h in Headers */,
+				57D0E9BA1C03A78F001E731E /* MCSPluginUserDefaultsController.h in Headers */,
+				577F20DA1BE782E300C62100 /* MochaRuntime.h in Headers */,
+				57D0E9C11C03AC84001E731E /* MCSPluginUpdater.h in Headers */,
+				577F20DB1BE782E300C62100 /* SketchRuntime.h in Headers */,
+				577F20DC1BE782E300C62100 /* MCSPluginController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5726F4E41BBF2A92006C92AB /* MCSketchPluginFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5726F4ED1BBF2A92006C92AB /* Build configuration list for PBXNativeTarget "MCSketchPluginFramework" */;
+			buildPhases = (
+				5726F4E01BBF2A92006C92AB /* Sources */,
+				5726F4E11BBF2A92006C92AB /* Frameworks */,
+				5726F4E21BBF2A92006C92AB /* Headers */,
+				5726F4E31BBF2A92006C92AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCSketchPluginFramework;
+			productName = MCSketchPluginFramework;
+			productReference = 5726F4E51BBF2A92006C92AB /* MCSketchPluginFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5726F4DC1BBF2A92006C92AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Matt;
+				TargetAttributes = {
+					5726F4E41BBF2A92006C92AB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5726F4DF1BBF2A92006C92AB /* Build configuration list for PBXProject "MCSketchPluginFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5726F4DB1BBF2A92006C92AB;
+			productRefGroup = 5726F4E61BBF2A92006C92AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5726F4E41BBF2A92006C92AB /* MCSketchPluginFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5726F4E31BBF2A92006C92AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57702C2F1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5726F4E01BBF2A92006C92AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57426E8A1BCAB2140014A79A /* MCSPluginController.m in Sources */,
+				57D0E9BB1C03A78F001E731E /* MCSPluginUserDefaultsController.m in Sources */,
+				5726F5011BBF31D0006C92AB /* Utilities.m in Sources */,
+				57C7C88D1BEDB29C007F8D33 /* RSSwizzle.m in Sources */,
+				57D0E9C21C03AC84001E731E /* MCSPluginUpdater.m in Sources */,
+				57D0E9B61C03A735001E731E /* MCSPluginUserDefaults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5726F4EB1BBF2A92006C92AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5726F4EC1BBF2A92006C92AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5726F4EE1BBF2A92006C92AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MCSketchPluginFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "matt-curtis.MCSketchPluginFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5726F4EF1BBF2A92006C92AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MCSketchPluginFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "matt-curtis.MCSketchPluginFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5726F4DF1BBF2A92006C92AB /* Build configuration list for PBXProject "MCSketchPluginFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5726F4EB1BBF2A92006C92AB /* Debug */,
+				5726F4EC1BBF2A92006C92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5726F4ED1BBF2A92006C92AB /* Build configuration list for PBXNativeTarget "MCSketchPluginFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5726F4EE1BBF2A92006C92AB /* Debug */,
+				5726F4EF1BBF2A92006C92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5726F4DC1BBF2A92006C92AB /* Project object */;
+}
