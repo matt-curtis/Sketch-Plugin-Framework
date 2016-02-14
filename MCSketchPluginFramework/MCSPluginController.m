@@ -162,7 +162,9 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 			_loadedVersion = plugin.version;
 		}
 		
+		_updater.pluginName = plugin.name;
 		_updater.pluginIdentifier = identifier;
+		
 		_userDefaults.pluginIdentifier = identifier;
 	}
 

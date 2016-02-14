@@ -236,7 +236,8 @@ NSData *Sketch_GetImageDataFromLayer(MSLayer *layer, double scale){
 	MSExportRequest *request =
 		[MSExportRequest_Class exportRequestsFromExportableLayer:layer exportFormats:@[ format ] useIDForName:false].firstObject;
 	
-	NSData *imageData = [[MSExporter_Class exporterForRequest:request colorSpace:nil allowSubpixelAntialiasing:true] PNGData];
+	NSColorSpace *colorSpace = [NSColorSpace sRGBColorSpace];
+	NSData *imageData = [[MSExporter_Class exporterForRequest:request colorSpace:colorSpace allowSubpixelAntialiasing:true] PNGData];
 	
 	return imageData;
 };

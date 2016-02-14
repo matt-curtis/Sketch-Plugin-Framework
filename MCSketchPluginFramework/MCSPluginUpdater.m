@@ -45,8 +45,8 @@
 	- (void) showUpdateRestartPrompt {
 		NSAlert *alert = [NSAlert new];
 		
-		alert.messageText = @"Fluid update complete!";
-		alert.informativeText = @"Restart Sketch to use the latest and greatest version of Fluid.";
+		alert.messageText = [NSString stringWithFormat:@"%@ update complete!", _pluginName];
+		alert.informativeText = [NSString stringWithFormat:@"Restart Sketch to use the latest and greatest version of %@.", _pluginName];
 		
 		[alert runModal];
 	}
