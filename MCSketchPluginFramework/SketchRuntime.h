@@ -157,6 +157,8 @@
 	@property (retain, nonatomic) MSRect *frame;
 
 
+	- (MSLayerGroup*) parentGroup;
+
 	- (MSPage*) parentPage;
 
 	- (MSArtboardGroup*) parentArtboard;
