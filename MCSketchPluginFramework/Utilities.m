@@ -62,6 +62,18 @@ CGSize Sketch_GetTextSize(MSTextLayer *textLayer){
 
 
 #pragma mark -
+#pragma mark Layer Creation
+
+MSShapeGroup *Sketch_CreateShapeLayer(){
+	return (MSShapeGroup*)[[MSLayerGroup_Class new] addLayerOfType:@"rectangle"];
+};
+
+MSTextLayer *Sketch_CreateTextLayer(){
+	return (MSTextLayer*)[[MSLayerGroup_Class new] addLayerOfType:@"text"];
+};
+
+
+#pragma mark -
 #pragma mark Document
 
 MSDocument *Sketch_GetCurrentDocument(){
@@ -227,6 +239,7 @@ CGRect Sketch_GetLayerFrameInScreen(MSLayer *layer, MSDocument *document){
 	
 	return rect;
 };
+
 
 #pragma mark -
 #pragma mark Layer to Images
