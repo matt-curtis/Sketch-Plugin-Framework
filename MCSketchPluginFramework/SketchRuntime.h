@@ -143,11 +143,16 @@
 
 @interface MSLayer : NSObject
 
+	@property (nonatomic) NSString *name;
+
+	@property (readonly, nonatomic) BOOL nameIsFixed;
+
+
 	@property (nonatomic) id sharedObjectID;
 
-	@property (nonatomic) MSAbsoluteRect *absoluteRect;
+	@property (readonly, copy, nonatomic) NSObject<NSCopying, NSCoding> *objectID;
 
-	@property (nonatomic) NSString *name;
+	@property (readonly, nonatomic) NSObject<NSCopying, NSCoding> *originalObjectID;
 
 
 	@property (nonatomic) CGPoint origin;
@@ -156,6 +161,18 @@
 
 	@property (retain, nonatomic) MSRect *frame;
 
+	@property (nonatomic) MSAbsoluteRect *absoluteRect;
+
+
+	@property (nonatomic) BOOL isSelected;
+
+	@property (nonatomic) BOOL isHovering;
+
+
+	- (void) select:(BOOL)select byExpandingSelection:(BOOL)expandSelection showSelection:(BOOL)showSelection;
+
+	- (void) select:(BOOL)select byExpandingSelection:(BOOL)expandSelection;
+
 
 	- (MSLayerGroup*) parentGroup;
 
@@ -163,13 +180,19 @@
 
 	- (MSArtboardGroup*) parentArtboard;
 
+
 	- (instancetype) duplicate;
+
 
 	- (void) removeFromParent;
 
+
 	- (BOOL) isSharedObject;
+
 	- (BOOL) isSymbol;
+
 	- (BOOL) containsSymbols;
+
 	- (BOOL) parentOrSelfIsSymbol;
 
 @end

@@ -95,12 +95,25 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 	#pragma mark Singleton
 
 	+ (instancetype) pluginController {
-		static id instance = nil;
-		static dispatch_once_t onceToken;
+		//	Create table map
 		
-		dispatch_once(&onceToken, ^{
-			instance = [[self alloc] init];
-		});
+		static NSMutableDictionary *instanceDict;
+		
+		if(!instanceDict) instanceDict = [NSMutableDictionary new];
+		
+		//	Instance of class already exists
+		
+		id<NSCopying> key = (id<NSCopying>)[self class];
+		
+		id instance = [instanceDict objectForKey:key];
+		
+		if(instance) return instance;
+		
+		//	Instance doesn't exist, create it
+		
+		instance = [self new];
+		
+		[instanceDict setObject:instance forKey:key];
 		
 		return instance;
 	}
@@ -138,6 +151,7 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 	#pragma mark Application Notifications
 
 	- (void) applicationDidBecomeActive {
+		/*
 		if(_showedUpdatePromptOnce) return;
 		
 		BOOL newerPluginBundleAvailable = [_updater isNewerPluginBundleAvailableLocally:_loadedVersion];
@@ -147,6 +161,7 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 		_showedUpdatePromptOnce = true;
 		
 		[_updater showUpdateRestartPrompt];
+		*/
 	}
 
 
