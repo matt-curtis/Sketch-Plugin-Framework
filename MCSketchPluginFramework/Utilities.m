@@ -249,12 +249,12 @@ CGRect Sketch_GetLayerFrameInScreen(MSLayer *layer, MSDocument *document){
 #pragma mark Layer to Images
 
 NSData *Sketch_GetImageDataFromLayer(MSLayer *layer, double scale){
-	MSExportFormat *format = [MSExportFormat_Class formatWithScale:scale name:@"" fileFormat:@""];
+	MSExportFormat *format = [MSExportFormat_Class formatWithScale:scale name:@"no" fileFormat:@"png"];
 	MSExportRequest *request =
 		[MSExportRequest_Class exportRequestsFromExportableLayer:layer exportFormats:@[ format ] useIDForName:false].firstObject;
 	
 	NSColorSpace *colorSpace = [NSColorSpace sRGBColorSpace];
-	NSData *imageData = [[MSExporter_Class exporterForRequest:request colorSpace:colorSpace] PNGData];
+	NSData *imageData = [[MSExporter_Class exporterForRequest:request colorSpace:colorSpace] data];
 	
 	return imageData;
 };
