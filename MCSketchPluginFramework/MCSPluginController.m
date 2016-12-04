@@ -79,10 +79,6 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 		
 		_userDefaults = [MCSPluginUserDefaults new];
 		
-		//	Updater
-		
-		_updater = [MCSPluginUpdater new];
-		
 		return self;
 	}
 
@@ -148,24 +144,6 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 
 
 	#pragma mark -
-	#pragma mark Application Notifications
-
-	- (void) applicationDidBecomeActive {
-		/*
-		if(_showedUpdatePromptOnce) return;
-		
-		BOOL newerPluginBundleAvailable = [_updater isNewerPluginBundleAvailableLocally:_loadedVersion];
-		
-		if(!newerPluginBundleAvailable) return;
-		
-		_showedUpdatePromptOnce = true;
-		
-		[_updater showUpdateRestartPrompt];
-		*/
-	}
-
-
-	#pragma mark -
 	#pragma mark Plugin Setter
 
 	- (void) setPlugin:(MSPluginBundle*)plugin {
@@ -176,9 +154,6 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 		if(!_loadedVersion){
 			_loadedVersion = plugin.version;
 		}
-		
-		_updater.pluginName = plugin.name;
-		_updater.pluginIdentifier = identifier;
 		
 		_userDefaults.pluginIdentifier = identifier;
 	}
