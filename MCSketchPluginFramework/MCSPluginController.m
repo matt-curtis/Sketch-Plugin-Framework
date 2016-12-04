@@ -69,12 +69,6 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 			name:NSWindowWillCloseNotification
 			object:nil];
 		
-		[notificationCenter
-			addObserver:self
-			selector:@selector(applicationDidBecomeActive)
-			name:NSApplicationDidBecomeActiveNotification
-			object:nil];
-		
 		//	User Defaults
 		
 		_userDefaults = [MCSPluginUserDefaults new];
