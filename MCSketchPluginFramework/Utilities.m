@@ -40,6 +40,9 @@ JSValue *JSValueFromMochaObject(MOJavaScriptObject *mochaObject){
 #pragma mark -
 #pragma mark Text
 
+/*
+//	Non-working APIs as of 3.7.1 (?)
+
 CGFloat Sketch_GetTextHeight(CGFloat desiredTextWidth, MSTextLayer *textLayer){
 	CGFloat formerWidth = textLayer.frame.width;
 	
@@ -59,6 +62,7 @@ CGSize Sketch_GetTextSize(MSTextLayer *textLayer){
 	
 	return textSize;
 };
+*/
 
 
 #pragma mark -
