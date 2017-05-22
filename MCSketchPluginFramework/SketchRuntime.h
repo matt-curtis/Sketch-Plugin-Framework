@@ -369,3 +369,12 @@
 	//@property (retain, nonatomic) MSPasteboardManager *pasteboardManager;
 
 @end
+
+#define MSArtboardPresetStore_Class GetClass(@"MSArtboardPresetStore")
+
+@interface MSArtboardPresetStore : NSObject
+
+	+ (NSURL*) systemPresetsURL;
+	- (NSURL*) userPresetsURL;
+
+@end
