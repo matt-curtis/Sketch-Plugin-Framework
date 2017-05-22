@@ -277,9 +277,13 @@
 
 	@property (nonatomic) double fontSize;
 
-	- (NSTextContainer*) textContainer;
+	@property (nonatomic, copy) NSAttributedString *attributedStringValue;
 
-	- (NSLayoutManager*) layoutManager;
+	- (NSTextStorage*) createTextStorage;
+
+	- (NSTextContainer*) createTextContainer;
+
+	- (NSLayoutManager*) createLayoutManager;
 
 @end
 

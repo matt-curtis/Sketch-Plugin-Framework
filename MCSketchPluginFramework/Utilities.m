@@ -40,9 +40,6 @@ JSValue *JSValueFromMochaObject(MOJavaScriptObject *mochaObject){
 #pragma mark -
 #pragma mark Text
 
-/*
-//	Non-working APIs as of 3.7.1 (?)
-
 CGFloat Sketch_GetTextHeight(CGFloat desiredTextWidth, MSTextLayer *textLayer){
 	CGFloat formerWidth = textLayer.frame.width;
 	
@@ -56,14 +53,26 @@ CGFloat Sketch_GetTextHeight(CGFloat desiredTextWidth, MSTextLayer *textLayer){
 };
 
 CGSize Sketch_GetTextSize(MSTextLayer *textLayer){
-	[textLayer.layoutManager glyphRangeForTextContainer:textLayer.textContainer];
-	
-	CGSize textSize = [textLayer.layoutManager usedRectForTextContainer:textLayer.textContainer].size;
-	
-	return textSize;
-};
-*/
+	//	Create & size text container
 
+	NSTextContainer *textContainer = [textLayer createTextContainer];
+
+	textContainer.size = CGSizeMake(textLayer.frame.size.width, CGFLOAT_MAX);
+	
+	//	Create layout manager & text storage
+
+	NSLayoutManager *layoutManager = [textLayer createLayoutManager];
+	
+	layoutManager.textStorage = [textLayer createTextStorage];
+	
+	[layoutManager addTextContainer:textContainer];
+	
+	//	Force update if needed...
+	
+    [layoutManager glyphRangeForTextContainer:textContainer];
+	
+    return [layoutManager usedRectForTextContainer:textContainer].size;
+};
 
 #pragma mark -
 #pragma mark Layer Creation
