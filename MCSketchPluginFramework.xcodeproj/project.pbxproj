@@ -16,8 +16,6 @@
 		577F20DA1BE782E300C62100 /* MochaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4F81BBF2D1F006C92AB /* MochaRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		577F20DB1BE782E300C62100 /* SketchRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5726F4F01BBF2ABC006C92AB /* SketchRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		577F20DC1BE782E300C62100 /* MCSPluginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57426E871BCAB2140014A79A /* MCSPluginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57C7C88C1BEDB29B007F8D33 /* RSSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */; };
-		57C7C88D1BEDB29C007F8D33 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */; };
 		57D0E9B51C03A735001E731E /* MCSPluginUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0E9B31C03A735001E731E /* MCSPluginUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57D0E9B61C03A735001E731E /* MCSPluginUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0E9B41C03A735001E731E /* MCSPluginUserDefaults.m */; };
 		57D0E9BA1C03A78F001E731E /* MCSPluginUserDefaultsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0E9B81C03A78F001E731E /* MCSPluginUserDefaultsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,8 +36,6 @@
 		57426E871BCAB2140014A79A /* MCSPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginController.h; sourceTree = "<group>"; };
 		57426E881BCAB2140014A79A /* MCSPluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginController.m; sourceTree = "<group>"; };
 		57702C2E1C05FA0400AB3835 /* MCSPluginUpdatePromptWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCSPluginUpdatePromptWindow.xib; sourceTree = "<group>"; };
-		57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
-		57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
 		57D0E9B31C03A735001E731E /* MCSPluginUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginUserDefaults.h; sourceTree = "<group>"; };
 		57D0E9B41C03A735001E731E /* MCSPluginUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPluginUserDefaults.m; sourceTree = "<group>"; };
 		57D0E9B81C03A78F001E731E /* MCSPluginUserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPluginUserDefaultsController.h; sourceTree = "<group>"; };
@@ -66,7 +62,6 @@
 				5726F4E81BBF2A92006C92AB /* MCSketchPluginFramework.h */,
 				57702C361C0616DD00AB3835 /* Resources */,
 				5726F4E71BBF2A92006C92AB /* MCSketchPluginFramework */,
-				57C7C8891BEDB283007F8D33 /* RSSwizzle */,
 				57D0E9BD1C03AC2F001E731E /* Frameworks */,
 				5726F4E61BBF2A92006C92AB /* Products */,
 			);
@@ -97,15 +92,6 @@
 			children = (
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		57C7C8891BEDB283007F8D33 /* RSSwizzle */ = {
-			isa = PBXGroup;
-			children = (
-				57C7C88A1BEDB29B007F8D33 /* RSSwizzle.h */,
-				57C7C88B1BEDB29B007F8D33 /* RSSwizzle.m */,
-			);
-			name = RSSwizzle;
 			sourceTree = "<group>";
 		};
 		57D0E9AE1C03A6CA001E731E /* Utilitiy Functions */ = {
@@ -190,7 +176,6 @@
 			files = (
 				5726F4E91BBF2A92006C92AB /* MCSketchPluginFramework.h in Headers */,
 				577F20D91BE782E300C62100 /* Utilities.h in Headers */,
-				57C7C88C1BEDB29B007F8D33 /* RSSwizzle.h in Headers */,
 				57D0E9B51C03A735001E731E /* MCSPluginUserDefaults.h in Headers */,
 				57D0E9BA1C03A78F001E731E /* MCSPluginUserDefaultsController.h in Headers */,
 				577F20DA1BE782E300C62100 /* MochaRuntime.h in Headers */,
@@ -271,7 +256,6 @@
 				57426E8A1BCAB2140014A79A /* MCSPluginController.m in Sources */,
 				57D0E9BB1C03A78F001E731E /* MCSPluginUserDefaultsController.m in Sources */,
 				5726F5011BBF31D0006C92AB /* Utilities.m in Sources */,
-				57C7C88D1BEDB29C007F8D33 /* RSSwizzle.m in Sources */,
 				57D0E9C21C03AC84001E731E /* MCSPluginUpdater.m in Sources */,
 				57D0E9B61C03A735001E731E /* MCSPluginUserDefaults.m in Sources */,
 			);

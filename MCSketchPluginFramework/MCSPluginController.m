@@ -8,16 +8,10 @@
 
 #import "MCSPluginController.h"
 
-#import "RSSwizzle.h"
-
 #import "Utilities.h"
 
 
 //	Notification
-
-NSString *const MCSPluginSelectionDidChangeNotification = @"MCSPluginSelectionDidChangeNotification";
-
-NSString *const MCSPluginCurrentArtboardDidChangeNotification = @"MCSPluginCurrentArtboardDidChangeNotification";
 
 NSString *const MCSPluginCurrentDocumentDidChangeNotification = @"MCSPluginCurrentDocumentDidChangeNotification";
 
@@ -42,10 +36,6 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 	- (instancetype) init {
 		self = [super init];
 		if(!self) return self;
-		
-		//	Swizzling
-		
-		[self swizzleForEvents];
 		
 		//	Notifications
 		
@@ -220,57 +210,13 @@ NSString *const MCSPluginNotificationDocumentWindowKey = @"MCSPluginNotification
 	}
 
 	- (void) swizzleForEvents {
-		static const void *key = &key;
-		
-		__weak typeof(self) trueSelf = self;
-		
 		//	Selected Layers Did Change
 		
-		RSSwizzleInstanceMethod(MSDocument_Class,
-			@selector(layerSelectionDidChange),
-			RSSWReturnType(void),
-			RSSWArguments(),
-			RSSWReplacement({
-				RSSWCallOriginal();
-			
-				MSDocument *document = (MSDocument*)self;
-				NSDictionary *userInfo = @{
-					MCSPluginNotificationDocumentKey: document,
-					MCSPluginNotificationDocumentWindowKey: document.window
-				};
-			
-				NSNotification *notification =
-					[NSNotification notificationWithName:MCSPluginSelectionDidChangeNotification object:trueSelf userInfo:userInfo];
-			
-				[trueSelf currentSelectionDidChange:notification];
-			
-				[[NSNotificationCenter defaultCenter] postNotification:notification];
-			}),
-			RSSwizzleModeOncePerClassAndSuperclasses,
-			key);
+		/* snip, use SelectionChanged */
 		
 		//	Current Artboard Did Change
 		
-		RSSwizzleInstanceMethod(MSDocument_Class,
-			@selector(currentArtboardDidChange),
-			RSSWReturnType(void),
-			RSSWArguments(),
-			RSSWReplacement({
-				RSSWCallOriginal();
-			
-				MSDocument *document = (MSDocument*)self;
-				NSDictionary *userInfo = @{
-					MCSPluginNotificationDocumentKey: document,
-					MCSPluginNotificationDocumentWindowKey: document.window
-				};
-			
-				NSNotification *notification =
-					[NSNotification notificationWithName:MCSPluginCurrentArtboardDidChangeNotification object:trueSelf userInfo:userInfo];
-			
-				[[NSNotificationCenter defaultCenter] postNotification:notification];
-			}),
-			RSSwizzleModeOncePerClassAndSuperclasses,
-			key);
+		/* snip, use ArtboardChanged */
 	}
 
 @end
