@@ -279,12 +279,6 @@
 
 	@property (nonatomic, copy) NSAttributedString *attributedStringValue;
 
-	- (NSTextStorage*) createTextStorage;
-
-	- (NSTextContainer*) createTextContainer;
-
-	- (NSLayoutManager*) createLayoutManager;
-
 @end
 
 #define MSShapeGroup_Class GetClass(@"MSShapeGroup")

@@ -55,15 +55,17 @@ CGFloat Sketch_GetTextHeight(CGFloat desiredTextWidth, MSTextLayer *textLayer){
 CGSize Sketch_GetTextSize(MSTextLayer *textLayer){
 	//	Create & size text container
 
-	NSTextContainer *textContainer = [textLayer createTextContainer];
+	NSTextContainer *textContainer = [NSTextContainer new];
 
 	textContainer.size = CGSizeMake(textLayer.frame.size.width, CGFLOAT_MAX);
 	
 	//	Create layout manager & text storage
 
-	NSLayoutManager *layoutManager = [textLayer createLayoutManager];
+	NSLayoutManager *layoutManager = [NSLayoutManager new];
 	
-	layoutManager.textStorage = [textLayer createTextStorage];
+	NSTextStorage *textStorage = [[NSTextStorage alloc] initWithAttributedString:textLayer.attributedStringValue];
+	
+	layoutManager.textStorage = textStorage;
 	
 	[layoutManager addTextContainer:textContainer];
 	
